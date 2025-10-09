@@ -62,3 +62,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Repository](https://github.com/msboffl/eKart)
 - [Issues](https://github.com/msboffl/eKart/issues)
+
+To run the project we will need ts-node which is TypeScript Engine to run the ts files directly.

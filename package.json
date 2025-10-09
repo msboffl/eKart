@@ -22,5 +22,10 @@
   "devDependencies": {
     "@structure-codes/cli": "^0.0.6",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "cookie-parser": "^1.4.7",
+    "jsonwebtoken": "^9.0.2"
   }
 }
