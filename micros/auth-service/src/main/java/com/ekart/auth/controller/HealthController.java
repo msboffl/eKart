@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-public class HelloController {
+public class HealthController {
     @GetMapping("/")
     public Map<String, String> sayHello() {
-        return Map.of("message", "Auth Service is working..");
+        return Map.of("message", "Auth Service is healthy..");
     }
 }
