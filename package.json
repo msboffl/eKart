@@ -4,7 +4,10 @@
   "description": "eKart is an microservice ecommerce application",
   "main": "index.js",
   "scripts": {
-    "generate:tree": "struct -o project.tree"
+    "generate:tree": "struct -o project.tree",
+    "auth:dev": "cd micros/auth-service && (./mvnw spring-boot:run || mvnw.cmd spring-boot:run)",
+    "auth:build": "cd micros/auth-service && (./mvnw clean package -DskipTests || mvnw.cmd clean package -DskipTests)",
+    "auth:start": "java -jar micros/auth-service/target/auth-service-0.0.1-SNAPSHOT.jar"
   },
   "repository": {
     "type": "git",

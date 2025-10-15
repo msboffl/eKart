@@ -9,6 +9,6 @@ import java.util.Map;
 public class HealthController {
     @GetMapping("/")
     public Map<String, String> sayHello() {
-        return Map.of("message", "Auth Service is healthy..");
+        return Map.of("message", "Auth Service is healthy..!!");
     }
 }
