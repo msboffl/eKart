@@ -255,7 +255,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Mareedu Saibabu**
 
 - GitHub: [@msboffl](https://github.com/msboffl)
-- LinkedIn: [Mareedu Saibabu](https://linkedin.com/in/msbo-ffl)
+- LinkedIn: [Mareedu Saibabu](https://linkedin.com/in/msb-offl)
 
 ## 🔗 Links
 
