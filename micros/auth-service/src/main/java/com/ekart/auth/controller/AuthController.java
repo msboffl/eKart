@@ -1,7 +1,10 @@
 package com.ekart.auth.controller;
 
-import org.springframework.beans.factory.annotation.Value;
+import com.ekart.auth.entity.DbCheckEntity;
+import com.ekart.auth.repository.DbCheckRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -54,4 +57,23 @@ public class AuthController {
     public ResponseEntity<String> changePassword() {
         return ResponseEntity.ok("Password changed successfully");
     }
+
+    // -------------------------------
+    // 🧠 DATABASE CHECK ENDPOINT
+    // -------------------------------
+    @Autowired
+    private DbCheckRepository dbCheckRepository;
+
+    @GetMapping("/db-check")
+    public ResponseEntity<String> checkDatabase() {
+        try {
+            var check = new DbCheckEntity();
+            check.setMessage("DB Working Test");
+            dbCheckRepository.save(check);
+            return ResponseEntity.ok("✅ Database is working! Saved ID: " + check.getId());
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().body("❌ Database error: " + e.getMessage());
+        }
+    }
+
 }
