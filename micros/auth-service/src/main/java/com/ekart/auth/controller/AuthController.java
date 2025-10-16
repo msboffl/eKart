@@ -12,7 +12,6 @@ public class AuthController {
     // -------------------------
     // 🔑 AUTH ENDPOINTS
     // -------------------------
-
     @PostMapping("/register")
     public ResponseEntity<String> register() {
         return ResponseEntity.ok("User registered successfully");
