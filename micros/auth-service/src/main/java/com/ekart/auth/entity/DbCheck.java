@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "db_check")
-public class DbCheckEntity {
+public class DbCheck {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
