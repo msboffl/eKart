@@ -19,21 +19,57 @@
 │  ├── mobile-store
 │  │  └── .gitkeep
 │  ├── web-admin
-│  │  └── .gitkeep
+│  │  ├── .gitignore
+│  │  ├── eslint.config.js
+│  │  ├── index.html
+│  │  ├── package.json
+│  │  ├── public
+│  │  │  └── vite.svg
+│  │  ├── README.md
+│  │  ├── src
+│  │  │  ├── App.css
+│  │  │  ├── App.tsx
+│  │  │  ├── assets
+│  │  │  │  └── react.svg
+│  │  │  ├── index.css
+│  │  │  └── main.tsx
+│  │  ├── tsconfig.app.json
+│  │  ├── tsconfig.json
+│  │  ├── tsconfig.node.json
+│  │  └── vite.config.ts
 │  └── web-store
-│    └── .gitkeep
+│    ├── .gitignore
+│    ├── eslint.config.mjs
+│    ├── next.config.ts
+│    ├── package.json
+│    ├── postcss.config.mjs
+│    ├── public
+│    │  ├── file.svg
+│    │  ├── globe.svg
+│    │  ├── next.svg
+│    │  ├── vercel.svg
+│    │  └── window.svg
+│    ├── README.md
+│    ├── src
+│    │  └── app
+│    │    ├── favicon.ico
+│    │    ├── globals.css
+│    │    ├── layout.tsx
+│    │    └── page.tsx
+│    └── tsconfig.json
 ├── LICENSE
 ├── micros
 │  ├── .DS_Store
 │  ├── api-gateway
 │  │  └── .gitkeep
 │  ├── auth-service
+│  │  ├── .env
+│  │  ├── .env.example
 │  │  ├── .gitattributes
 │  │  ├── .gitignore
 │  │  ├── .mvn
 │  │  │  └── wrapper
 │  │  │    └── maven-wrapper.properties
-│  │  ├── HELP.md
 │  │  ├── mvnw
 │  │  ├── mvnw.cmd
 │  │  ├── pom.xml
@@ -44,12 +80,17 @@
 │  │  │  │  │    └── ekart
 │  │  │  │  │      └── auth
 │  │  │  │  │        ├── AuthServiceApplication.java
-│  │  │  │  │        └── controller
-│  │  │  │  │          └── HealthController.java
+│  │  │  │  │        ├── controller
+│  │  │  │  │        │  ├── AuthController.java
+│  │  │  │  │        │  └── HealthController.java
+│  │  │  │  │        ├── dto
+│  │  │  │  │        ├── entity
+│  │  │  │  │        │  └── DbCheckEntity.java
+│  │  │  │  │        ├── repository
+│  │  │  │  │        │  └── DbCheckRepository.java
+│  │  │  │  │        └── service
 │  │  │  │  └── resources
-│  │  │  │    ├── application.properties
-│  │  │  │    ├── static
-│  │  │  │    └── templates
+│  │  │  │    └── application.properties
 │  │  │  └── test
 │  │  │    └── java
 │  │  │      └── com
@@ -57,40 +98,21 @@
 │  │  │          └── auth
 │  │  │            └── AuthServiceApplicationTests.java
 │  │  └── target
-│  │    ├── auth-service-0.0.1-SNAPSHOT.jar
-│  │    ├── auth-service-0.0.1-SNAPSHOT.jar.original
 │  │    ├── classes
 │  │    │  ├── application.properties
 │  │    │  └── com
 │  │    │    └── ekart
 │  │    │      └── auth
 │  │    │        ├── AuthServiceApplication.class
-│  │    │        └── controller
-│  │    │          └── HealthController.class
-│  │    ├── generated-sources
-│  │    │  └── annotations
-│  │    ├── generated-test-sources
-│  │    │  └── test-annotations
-│  │    ├── maven-archiver
-│  │    │  └── pom.properties
-│  │    ├── maven-status
-│  │    │  └── maven-compiler-plugin
-│  │    │    ├── compile
-│  │    │    │  └── default-compile
-│  │    │    │    ├── createdFiles.lst
-│  │    │    │    └── inputFiles.lst
-│  │    │    └── testCompile
-│  │    │      └── default-testCompile
-│  │    │        ├── createdFiles.lst
-│  │    │        └── inputFiles.lst
-│  │    ├── surefire-reports
-│  │    │  ├── com.ekart.auth.AuthServiceApplicationTests.txt
-│  │    │  └── TEST-com.ekart.auth.AuthServiceApplicationTests.xml
-│  │    └── test-classes
-│  │      └── com
-│  │        └── ekart
-│  │          └── auth
-│  │            └── AuthServiceApplicationTests.class
+│  │    │        ├── controller
+│  │    │        │  ├── AuthController.class
+│  │    │        │  └── HealthController.class
+│  │    │        ├── entity
+│  │    │        │  └── DbCheckEntity.class
+│  │    │        └── repository
+│  │    │          └── DbCheckRepository.class
+│  │    └── generated-sources
+│  │      └── annotations
 │  ├── product-service
 │  │  └── .gitkeep
 │  └── user-service
