@@ -17,11 +17,10 @@ public class AuthService {
          }
 
          User user = User.builder()
-                 .email(request.getEmail())
                  .fullName(request.getFullName())
+                 .email(request.getEmail())
                  .password(request.getPassword())
                  .build();
-
          return userRepository.save(user);
      }
 

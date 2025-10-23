@@ -23,6 +23,7 @@ public class AuthController {
     public ResponseEntity<RegisterResponse> register(@RequestBody RegisterRequest request) {
         try {
             User user = authService.register(request);
+
             RegisterResponse response = RegisterResponse.builder()
                     .id(user.getId())
                     .email(user.getEmail())
