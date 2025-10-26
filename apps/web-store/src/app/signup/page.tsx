@@ -2,17 +2,50 @@
 import { BenefitCard } from '@/components/BenefitCard';
 import { benefits } from '@/data/benefits';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import React, { useState } from 'react';
 
 export default function SignUp() {
+  const router = useRouter();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSignUp = () => {
-    console.log(firstName, lastName, email, password, confirmPassword);
+  const handleSignUp = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (password !== confirmPassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+
+    try {
+      const userData = {
+        fullName: `${firstName} ${lastName}`,
+        email,
+        password,
+      };
+
+      const response = await fetch('http://localhost:4001/api/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      });
+      const data = await response.json();
+      console.log('Response data:', data);
+      if (response.ok) {
+        alert('User registered successfully');
+        router.push('/signin');
+      } else {
+        alert('Error during registration');
+      }
+    } catch (error) {
+      console.error('Error during sign up:', error);
+    }
   };
 
   return (
