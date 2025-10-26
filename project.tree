@@ -39,7 +39,328 @@
 │  │  └── vite.config.ts
 │  └── web-store
 │    ├── .gitignore
+│    ├── .next
+│    │  ├── app-build-manifest.json
+│    │  ├── build
+│    │  │  └── chunks
+│    │  │    ├── [root-of-the-server]__98a37f5f._.js
+│    │  │    ├── [root-of-the-server]__98a37f5f._.js.map
+│    │  │    ├── [root-of-the-server]__9f722662._.js
+│    │  │    ├── [root-of-the-server]__9f722662._.js.map
+│    │  │    ├── [turbopack-node]_transforms_postcss_ts_b22732a2._.js
+│    │  │    ├── [turbopack-node]_transforms_postcss_ts_b22732a2._.js.map
+│    │  │    ├── [turbopack]_runtime.js
+│    │  │    ├── [turbopack]_runtime.js.map
+│    │  │    ├── node_modules__pnpm_56ec7204._.js
+│    │  │    └── node_modules__pnpm_56ec7204._.js.map
+│    │  ├── build-manifest.json
+│    │  ├── cache
+│    │  │  ├── .rscinfo
+│    │  │  ├── chrome-devtools-workspace-uuid
+│    │  │  └── next-devtools-config.json
+│    │  ├── fallback-build-manifest.json
+│    │  ├── package.json
+│    │  ├── postcss.js
+│    │  ├── postcss.js.map
+│    │  ├── prerender-manifest.json
+│    │  ├── routes-manifest.json
+│    │  ├── server
+│    │  │  ├── app
+│    │  │  │  ├── _not-found
+│    │  │  │  │  ├── page
+│    │  │  │  │  │  ├── app-build-manifest.json
+│    │  │  │  │  │  ├── app-paths-manifest.json
+│    │  │  │  │  │  ├── build-manifest.json
+│    │  │  │  │  │  ├── next-font-manifest.json
+│    │  │  │  │  │  ├── react-loadable-manifest.json
+│    │  │  │  │  │  └── server-reference-manifest.json
+│    │  │  │  │  ├── page_client-reference-manifest.js
+│    │  │  │  │  ├── page.js
+│    │  │  │  │  └── page.js.map
+│    │  │  │  ├── favicon.ico
+│    │  │  │  │  ├── route
+│    │  │  │  │  │  ├── app-build-manifest.json
+│    │  │  │  │  │  ├── app-paths-manifest.json
+│    │  │  │  │  │  └── build-manifest.json
+│    │  │  │  │  ├── route.js
+│    │  │  │  │  └── route.js.map
+│    │  │  │  ├── page
+│    │  │  │  │  ├── app-build-manifest.json
+│    │  │  │  │  ├── app-paths-manifest.json
+│    │  │  │  │  ├── build-manifest.json
+│    │  │  │  │  ├── next-font-manifest.json
+│    │  │  │  │  ├── react-loadable-manifest.json
+│    │  │  │  │  └── server-reference-manifest.json
+│    │  │  │  ├── page_client-reference-manifest.js
+│    │  │  │  ├── page.js
+│    │  │  │  ├── page.js.map
+│    │  │  │  ├── signin
+│    │  │  │  │  ├── page
+│    │  │  │  │  │  ├── app-build-manifest.json
+│    │  │  │  │  │  ├── app-paths-manifest.json
+│    │  │  │  │  │  ├── build-manifest.json
+│    │  │  │  │  │  ├── next-font-manifest.json
+│    │  │  │  │  │  ├── react-loadable-manifest.json
+│    │  │  │  │  │  └── server-reference-manifest.json
+│    │  │  │  │  ├── page_client-reference-manifest.js
+│    │  │  │  │  ├── page.js
+│    │  │  │  │  └── page.js.map
+│    │  │  │  └── signup
+│    │  │  │    ├── page
+│    │  │  │    │  ├── app-build-manifest.json
+│    │  │  │    │  ├── app-paths-manifest.json
+│    │  │  │    │  ├── build-manifest.json
+│    │  │  │    │  ├── next-font-manifest.json
+│    │  │  │    │  ├── react-loadable-manifest.json
+│    │  │  │    │  └── server-reference-manifest.json
+│    │  │  │    ├── page_client-reference-manifest.js
+│    │  │  │    ├── page.js
+│    │  │  │    └── page.js.map
+│    │  │  ├── app-paths-manifest.json
+│    │  │  ├── chunks
+│    │  │  │  ├── [root-of-the-server]__d5fae2f0._.js
+│    │  │  │  ├── [root-of-the-server]__d5fae2f0._.js.map
+│    │  │  │  ├── [turbopack]_runtime.js
+│    │  │  │  ├── [turbopack]_runtime.js.map
+│    │  │  │  ├── 8fc7d_next_1654f8d9._.js
+│    │  │  │  ├── 8fc7d_next_1654f8d9._.js.map
+│    │  │  │  └── ssr
+│    │  │  │    ├── _0957df33._.js
+│    │  │  │    ├── _0957df33._.js.map
+│    │  │  │    ├── [externals]_next_dist_compiled_next-server_app-page-turbo_runtime_dev_062c5159.js
+│    │  │  │    ├── [externals]_next_dist_compiled_next-server_app-page-turbo_runtime_dev_062c5159.js.map
+│    │  │  │    ├── [externals]_next_dist_shared_lib_no-fallback-error_external_59b92b38.js
+│    │  │  │    ├── [externals]_next_dist_shared_lib_no-fallback-error_external_59b92b38.js.map
+│    │  │  │    ├── [root-of-the-server]__17e8a55b._.js
+│    │  │  │    ├── [root-of-the-server]__17e8a55b._.js.map
+│    │  │  │    ├── [root-of-the-server]__3147ee52._.js
+│    │  │  │    ├── [root-of-the-server]__3147ee52._.js.map
+│    │  │  │    ├── [root-of-the-server]__348c91d3._.js
+│    │  │  │    ├── [root-of-the-server]__348c91d3._.js.map
+│    │  │  │    ├── [root-of-the-server]__476f6df7._.js
+│    │  │  │    ├── [root-of-the-server]__476f6df7._.js.map
+│    │  │  │    ├── [root-of-the-server]__480a8cc9._.js
+│    │  │  │    ├── [root-of-the-server]__480a8cc9._.js.map
+│    │  │  │    ├── [root-of-the-server]__4a0601d6._.js
+│    │  │  │    ├── [root-of-the-server]__4a0601d6._.js.map
+│    │  │  │    ├── [root-of-the-server]__4d425a4e._.js
+│    │  │  │    ├── [root-of-the-server]__4d425a4e._.js.map
+│    │  │  │    ├── [root-of-the-server]__6981d8fe._.js
+│    │  │  │    ├── [root-of-the-server]__6981d8fe._.js.map
+│    │  │  │    ├── [root-of-the-server]__91e6ae77._.js
+│    │  │  │    ├── [root-of-the-server]__91e6ae77._.js.map
+│    │  │  │    ├── [root-of-the-server]__979b2670._.js
+│    │  │  │    ├── [root-of-the-server]__979b2670._.js.map
+│    │  │  │    ├── [root-of-the-server]__a88f8d17._.js
+│    │  │  │    ├── [root-of-the-server]__a88f8d17._.js.map
+│    │  │  │    ├── [root-of-the-server]__c80f7c8f._.js
+│    │  │  │    ├── [root-of-the-server]__c80f7c8f._.js.map
+│    │  │  │    ├── [root-of-the-server]__e2ab5b9a._.js
+│    │  │  │    ├── [root-of-the-server]__e2ab5b9a._.js.map
+│    │  │  │    ├── [root-of-the-server]__e6a4d965._.js
+│    │  │  │    ├── [root-of-the-server]__e6a4d965._.js.map
+│    │  │  │    ├── [root-of-the-server]__e8a2741f._.js
+│    │  │  │    ├── [root-of-the-server]__e8a2741f._.js.map
+│    │  │  │    ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_818f0fdf._.js
+│    │  │  │    ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_818f0fdf._.js.map
+│    │  │  │    ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_89c5f8e8._.js
+│    │  │  │    ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_89c5f8e8._.js.map
+│    │  │  │    ├── [turbopack]_runtime.js
+│    │  │  │    ├── [turbopack]_runtime.js.map
+│    │  │  │    ├── 69652_@swc_helpers_cjs_48f947d3._.js
+│    │  │  │    ├── 69652_@swc_helpers_cjs_48f947d3._.js.map
+│    │  │  │    ├── 8fc7d_next_c98a41c3._.js
+│    │  │  │    ├── 8fc7d_next_c98a41c3._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_06577843._.js
+│    │  │  │    ├── 8fc7d_next_dist_06577843._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_320e005e._.js
+│    │  │  │    ├── 8fc7d_next_dist_320e005e._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_35843bc4._.js
+│    │  │  │    ├── 8fc7d_next_dist_35843bc4._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_4a9edbfb._.js
+│    │  │  │    ├── 8fc7d_next_dist_4a9edbfb._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_76fa7cbb._.js
+│    │  │  │    ├── 8fc7d_next_dist_76fa7cbb._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_7c98cf85._.js
+│    │  │  │    ├── 8fc7d_next_dist_7c98cf85._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_8e94e31e._.js
+│    │  │  │    ├── 8fc7d_next_dist_8e94e31e._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_client_9583d891._.js
+│    │  │  │    ├── 8fc7d_next_dist_client_9583d891._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_client_components_4f4d2466._.js
+│    │  │  │    ├── 8fc7d_next_dist_client_components_4f4d2466._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_client_components_builtin_forbidden_eee81548.js
+│    │  │  │    ├── 8fc7d_next_dist_client_components_builtin_forbidden_eee81548.js.map
+│    │  │  │    ├── 8fc7d_next_dist_client_components_builtin_global-error_43b978bd.js
+│    │  │  │    ├── 8fc7d_next_dist_client_components_builtin_global-error_43b978bd.js.map
+│    │  │  │    ├── 8fc7d_next_dist_client_components_builtin_unauthorized_120d34c5.js
+│    │  │  │    ├── 8fc7d_next_dist_client_components_builtin_unauthorized_120d34c5.js.map
+│    │  │  │    ├── 8fc7d_next_dist_compiled_a3a0704f._.js
+│    │  │  │    ├── 8fc7d_next_dist_compiled_a3a0704f._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_compiled_next-devtools_index_2c7d11b8.js
+│    │  │  │    ├── 8fc7d_next_dist_compiled_next-devtools_index_2c7d11b8.js.map
+│    │  │  │    ├── 8fc7d_next_dist_daea6f34._.js
+│    │  │  │    ├── 8fc7d_next_dist_daea6f34._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_e3df2778._.js
+│    │  │  │    ├── 8fc7d_next_dist_e3df2778._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_esm_3ebf6efa._.js
+│    │  │  │    ├── 8fc7d_next_dist_esm_3ebf6efa._.js.map
+│    │  │  │    ├── 8fc7d_next_dist_server_route-modules_app-page_e440a6f6._.js
+│    │  │  │    ├── 8fc7d_next_dist_server_route-modules_app-page_e440a6f6._.js.map
+│    │  │  │    ├── 8fc7d_next_navigation_45c78255.js
+│    │  │  │    ├── 8fc7d_next_navigation_45c78255.js.map
+│    │  │  │    ├── apps_web-store_src_app_572b0fd1._.js
+│    │  │  │    ├── apps_web-store_src_app_572b0fd1._.js.map
+│    │  │  │    ├── node_modules__pnpm_00f22ebf._.js
+│    │  │  │    ├── node_modules__pnpm_00f22ebf._.js.map
+│    │  │  │    ├── node_modules__pnpm_1bfb4127._.js
+│    │  │  │    ├── node_modules__pnpm_1bfb4127._.js.map
+│    │  │  │    ├── node_modules__pnpm_4a141d57._.js
+│    │  │  │    ├── node_modules__pnpm_4a141d57._.js.map
+│    │  │  │    ├── node_modules__pnpm_639edd6f._.js
+│    │  │  │    ├── node_modules__pnpm_639edd6f._.js.map
+│    │  │  │    ├── node_modules__pnpm_c9ec89ef._.js
+│    │  │  │    ├── node_modules__pnpm_c9ec89ef._.js.map
+│    │  │  │    ├── node_modules__pnpm_db9b453b._.js
+│    │  │  │    └── node_modules__pnpm_db9b453b._.js.map
+│    │  │  ├── interception-route-rewrite-manifest.js
+│    │  │  ├── middleware-build-manifest.js
+│    │  │  ├── middleware-manifest.json
+│    │  │  ├── next-font-manifest.js
+│    │  │  ├── next-font-manifest.json
+│    │  │  ├── pages
+│    │  │  │  ├── _app
+│    │  │  │  │  ├── build-manifest.json
+│    │  │  │  │  ├── client-build-manifest.json
+│    │  │  │  │  ├── next-font-manifest.json
+│    │  │  │  │  ├── pages-manifest.json
+│    │  │  │  │  └── react-loadable-manifest.json
+│    │  │  │  ├── _app.js
+│    │  │  │  ├── _app.js.map
+│    │  │  │  ├── _document
+│    │  │  │  │  ├── next-font-manifest.json
+│    │  │  │  │  ├── pages-manifest.json
+│    │  │  │  │  └── react-loadable-manifest.json
+│    │  │  │  ├── _document.js
+│    │  │  │  ├── _document.js.map
+│    │  │  │  ├── _error
+│    │  │  │  │  ├── build-manifest.json
+│    │  │  │  │  ├── client-build-manifest.json
+│    │  │  │  │  ├── next-font-manifest.json
+│    │  │  │  │  ├── pages-manifest.json
+│    │  │  │  │  └── react-loadable-manifest.json
+│    │  │  │  ├── _error.js
+│    │  │  │  └── _error.js.map
+│    │  │  ├── pages-manifest.json
+│    │  │  ├── server-reference-manifest.js
+│    │  │  └── server-reference-manifest.json
+│    │  ├── static
+│    │  │  ├── chunks
+│    │  │  │  ├── _4ad982be._.js
+│    │  │  │  ├── _4ad982be._.js.map
+│    │  │  │  ├── _cd2d6c00._.js
+│    │  │  │  ├── _cd2d6c00._.js.map
+│    │  │  │  ├── [next]_entry_page-loader_ts_093638c2._.js
+│    │  │  │  ├── [next]_entry_page-loader_ts_093638c2._.js.map
+│    │  │  │  ├── [next]_entry_page-loader_ts_8774d956._.js
+│    │  │  │  ├── [next]_entry_page-loader_ts_8774d956._.js.map
+│    │  │  │  ├── [next]_internal_font_google_geist_a71539c9_module_css_bad6b30c._.single.css
+│    │  │  │  ├── [next]_internal_font_google_geist_a71539c9_module_css_bad6b30c._.single.css.map
+│    │  │  │  ├── [next]_internal_font_google_geist_mono_8d43a2aa_module_css_bad6b30c._.single.css
+│    │  │  │  ├── [next]_internal_font_google_geist_mono_8d43a2aa_module_css_bad6b30c._.single.css.map
+│    │  │  │  ├── [root-of-the-server]__119abf11._.js
+│    │  │  │  ├── [root-of-the-server]__119abf11._.js.map
+│    │  │  │  ├── [root-of-the-server]__7b8b2888._.css
+│    │  │  │  ├── [root-of-the-server]__7b8b2888._.css.map
+│    │  │  │  ├── [root-of-the-server]__d359de7a._.js
+│    │  │  │  ├── [root-of-the-server]__d359de7a._.js.map
+│    │  │  │  ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_22482330._.js
+│    │  │  │  ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_22482330._.js.map
+│    │  │  │  ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_c8c997ce._.js
+│    │  │  │  ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_c8c997ce._.js.map
+│    │  │  │  ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_e348bee9._.js
+│    │  │  │  ├── 69652_@swc_helpers_cjs_77b72907._.js
+│    │  │  │  ├── 69652_@swc_helpers_cjs_77b72907._.js.map
+│    │  │  │  ├── 8fc7d_next_app_11e9ba97.js
+│    │  │  │  ├── 8fc7d_next_app_11e9ba97.js.map
+│    │  │  │  ├── 8fc7d_next_dist_37283062._.js
+│    │  │  │  ├── 8fc7d_next_dist_37283062._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_4a5f466b._.js
+│    │  │  │  ├── 8fc7d_next_dist_4a5f466b._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_7c0857b1._.js
+│    │  │  │  ├── 8fc7d_next_dist_7c0857b1._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_abfd0f9f._.js
+│    │  │  │  ├── 8fc7d_next_dist_abfd0f9f._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_afbd11fa._.js
+│    │  │  │  ├── 8fc7d_next_dist_afbd11fa._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_build_polyfills_polyfill-nomodule.js
+│    │  │  │  ├── 8fc7d_next_dist_client_634f429a._.js
+│    │  │  │  ├── 8fc7d_next_dist_client_634f429a._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_client_85049a54._.js
+│    │  │  │  ├── 8fc7d_next_dist_client_85049a54._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_client_components_builtin_global-error_4058ab93.js
+│    │  │  │  ├── 8fc7d_next_dist_client_components_builtin_global-error_441574b1.js
+│    │  │  │  ├── 8fc7d_next_dist_compiled_18464928._.js
+│    │  │  │  ├── 8fc7d_next_dist_compiled_18464928._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_compiled_cba3ee4e._.js
+│    │  │  │  ├── 8fc7d_next_dist_compiled_cba3ee4e._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_compiled_next-devtools_index_cd8f740e.js
+│    │  │  │  ├── 8fc7d_next_dist_compiled_next-devtools_index_cd8f740e.js.map
+│    │  │  │  ├── 8fc7d_next_dist_compiled_next-devtools_index_df9ff156.js
+│    │  │  │  ├── 8fc7d_next_dist_compiled_next-devtools_index_df9ff156.js.map
+│    │  │  │  ├── 8fc7d_next_dist_compiled_react-dom_136125f1._.js
+│    │  │  │  ├── 8fc7d_next_dist_compiled_react-dom_136125f1._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_f5530b66._.js
+│    │  │  │  ├── 8fc7d_next_dist_f5530b66._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_shared_lib_7bd21697._.js
+│    │  │  │  ├── 8fc7d_next_dist_shared_lib_7bd21697._.js.map
+│    │  │  │  ├── 8fc7d_next_dist_shared_lib_f3370d1f._.js
+│    │  │  │  ├── 8fc7d_next_dist_shared_lib_f3370d1f._.js.map
+│    │  │  │  ├── 8fc7d_next_error_8cf31753.js
+│    │  │  │  ├── 8fc7d_next_error_8cf31753.js.map
+│    │  │  │  ├── apps_web-store_a0ff3932._.js
+│    │  │  │  ├── apps_web-store_a7c23cc5._.js.map
+│    │  │  │  ├── apps_web-store_pages__app_032046ca._.js.map
+│    │  │  │  ├── apps_web-store_pages__app_2da965e7._.js
+│    │  │  │  ├── apps_web-store_pages__error_2da965e7._.js
+│    │  │  │  ├── apps_web-store_pages__error_9b4858d1._.js.map
+│    │  │  │  ├── apps_web-store_src_app_favicon_ico_mjs_e7485ee6._.js
+│    │  │  │  ├── apps_web-store_src_app_globals_a0aa72f9.css
+│    │  │  │  ├── apps_web-store_src_app_globals_a0aa72f9.css.map
+│    │  │  │  ├── apps_web-store_src_app_globals_css_bad6b30c._.single.css
+│    │  │  │  ├── apps_web-store_src_app_globals_css_bad6b30c._.single.css.map
+│    │  │  │  ├── apps_web-store_src_app_layout_tsx_371df273._.js
+│    │  │  │  ├── apps_web-store_src_app_page_tsx_4058ab93._.js
+│    │  │  │  ├── apps_web-store_src_app_page_tsx_441574b1._.js
+│    │  │  │  ├── apps_web-store_src_app_signup_page_tsx_4058ab93._.js
+│    │  │  │  ├── c046a_react-dom_812c9f31._.js
+│    │  │  │  ├── c046a_react-dom_812c9f31._.js.map
+│    │  │  │  ├── node_modules__pnpm_f012a4b7._.js
+│    │  │  │  ├── node_modules__pnpm_f012a4b7._.js.map
+│    │  │  │  ├── pages
+│    │  │  │  │  ├── _app.js
+│    │  │  │  │  └── _error.js
+│    │  │  │  ├── turbopack-apps_web-store_a7c23cc5._.js
+│    │  │  │  ├── turbopack-apps_web-store_pages__app_032046ca._.js
+│    │  │  │  └── turbopack-apps_web-store_pages__error_9b4858d1._.js
+│    │  │  ├── development
+│    │  │  │  ├── _buildManifest.js
+│    │  │  │  ├── _clientMiddlewareManifest.json
+│    │  │  │  └── _ssgManifest.js
+│    │  │  └── media
+│    │  │    ├── 4fa387ec64143e14-s.c1fdd6c2.woff2
+│    │  │    ├── 7178b3e590c64307-s.b97b3418.woff2
+│    │  │    ├── 797e433ab948586e-s.p.dbea232f.woff2
+│    │  │    ├── 8a480f0b521d4e75-s.8e0177b5.woff2
+│    │  │    ├── bbc41e54d2fcbd21-s.799d8ef8.woff2
+│    │  │    ├── caa3a2e1cccd8315-s.p.853070df.woff2
+│    │  │    └── favicon.0b3bf435.ico
+│    │  ├── trace
+│    │  └── types
+│    │    ├── routes.d.ts
+│    │    └── validator.ts
 │    ├── eslint.config.mjs
+│    ├── next-env.d.ts
 │    ├── next.config.ts
 │    ├── package.json
 │    ├── postcss.config.mjs
@@ -51,11 +372,19 @@
 │    │  └── window.svg
 │    ├── README.md
 │    ├── src
-│    │  └── app
-│    │    ├── favicon.ico
-│    │    ├── globals.css
-│    │    ├── layout.tsx
-│    │    └── page.tsx
+│    │  ├── app
+│    │  │  ├── favicon.ico
+│    │  │  ├── globals.css
+│    │  │  ├── layout.tsx
+│    │  │  ├── page.tsx
+│    │  │  ├── signin
+│    │  │  │  └── page.tsx
+│    │  │  └── signup
+│    │  │    └── page.tsx
+│    │  ├── components
+│    │  │  └── BenefitCard.tsx
+│    │  └── data
+│    │    └── benefits.ts
 │    └── tsconfig.json
 ├── LICENSE
 ├── micros
@@ -84,11 +413,16 @@
 │  │  │  │  │        │  ├── AuthController.java
 │  │  │  │  │        │  └── HealthController.java
 │  │  │  │  │        ├── dto
+│  │  │  │  │        │  ├── RegisterRequest.java
+│  │  │  │  │        │  └── RegisterResponse.java
 │  │  │  │  │        ├── entity
-│  │  │  │  │        │  └── DbCheckEntity.java
+│  │  │  │  │        │  ├── DbCheck.java
+│  │  │  │  │        │  └── User.java
 │  │  │  │  │        ├── repository
-│  │  │  │  │        │  └── DbCheckRepository.java
+│  │  │  │  │        │  ├── DbCheckRepository.java
+│  │  │  │  │        │  └── UserRepository.java
 │  │  │  │  │        └── service
+│  │  │  │  │          └── AuthService.java
 │  │  │  │  └── resources
 │  │  │  │    └── application.properties
 │  │  │  └── test
@@ -107,10 +441,20 @@
 │  │    │        ├── controller
 │  │    │        │  ├── AuthController.class
 │  │    │        │  └── HealthController.class
+│  │    │        ├── dto
+│  │    │        │  ├── RegisterRequest.class
+│  │    │        │  ├── RegisterRequest$RegisterRequestBuilder.class
+│  │    │        │  ├── RegisterResponse.class
+│  │    │        │  └── RegisterResponse$RegisterResponseBuilder.class
 │  │    │        ├── entity
-│  │    │        │  └── DbCheckEntity.class
-│  │    │        └── repository
-│  │    │          └── DbCheckRepository.class
+│  │    │        │  ├── DbCheck.class
+│  │    │        │  ├── User.class
+│  │    │        │  └── User$UserBuilder.class
+│  │    │        ├── repository
+│  │    │        │  ├── DbCheckRepository.class
+│  │    │        │  └── UserRepository.class
+│  │    │        └── service
+│  │    │          └── AuthService.class
 │  │    └── generated-sources
 │  │      └── annotations
 │  ├── product-service
