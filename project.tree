@@ -40,6 +40,7 @@
 │  └── web-store
 │    ├── .gitignore
 │    ├── eslint.config.mjs
+│    ├── next-env.d.ts
 │    ├── next.config.ts
 │    ├── package.json
 │    ├── postcss.config.mjs
@@ -51,11 +52,19 @@
 │    │  └── window.svg
 │    ├── README.md
 │    ├── src
-│    │  └── app
-│    │    ├── favicon.ico
-│    │    ├── globals.css
-│    │    ├── layout.tsx
-│    │    └── page.tsx
+│    │  ├── app
+│    │  │  ├── favicon.ico
+│    │  │  ├── globals.css
+│    │  │  ├── layout.tsx
+│    │  │  ├── page.tsx
+│    │  │  ├── signin
+│    │  │  │  └── page.tsx
+│    │  │  └── signup
+│    │  │    └── page.tsx
+│    │  ├── components
+│    │  │  └── BenefitCard.tsx
+│    │  └── data
+│    │    └── benefits.ts
 │    └── tsconfig.json
 ├── LICENSE
 ├── micros
@@ -73,46 +82,35 @@
 │  │  ├── mvnw
 │  │  ├── mvnw.cmd
 │  │  ├── pom.xml
-│  │  ├── src
-│  │  │  ├── main
-│  │  │  │  ├── java
-│  │  │  │  │  └── com
-│  │  │  │  │    └── ekart
-│  │  │  │  │      └── auth
-│  │  │  │  │        ├── AuthServiceApplication.java
-│  │  │  │  │        ├── controller
-│  │  │  │  │        │  ├── AuthController.java
-│  │  │  │  │        │  └── HealthController.java
-│  │  │  │  │        ├── dto
-│  │  │  │  │        ├── entity
-│  │  │  │  │        │  └── DbCheckEntity.java
-│  │  │  │  │        ├── repository
-│  │  │  │  │        │  └── DbCheckRepository.java
-│  │  │  │  │        └── service
-│  │  │  │  └── resources
-│  │  │  │    └── application.properties
-│  │  │  └── test
-│  │  │    └── java
-│  │  │      └── com
-│  │  │        └── ekart
-│  │  │          └── auth
-│  │  │            └── AuthServiceApplicationTests.java
-│  │  └── target
-│  │    ├── classes
-│  │    │  ├── application.properties
-│  │    │  └── com
-│  │    │    └── ekart
-│  │    │      └── auth
-│  │    │        ├── AuthServiceApplication.class
-│  │    │        ├── controller
-│  │    │        │  ├── AuthController.class
-│  │    │        │  └── HealthController.class
-│  │    │        ├── entity
-│  │    │        │  └── DbCheckEntity.class
-│  │    │        └── repository
-│  │    │          └── DbCheckRepository.class
-│  │    └── generated-sources
-│  │      └── annotations
+│  │  └── src
+│  │    ├── main
+│  │    │  ├── java
+│  │    │  │  └── com
+│  │    │  │    └── ekart
+│  │    │  │      └── auth
+│  │    │  │        ├── AuthServiceApplication.java
+│  │    │  │        ├── controller
+│  │    │  │        │  ├── AuthController.java
+│  │    │  │        │  └── HealthController.java
+│  │    │  │        ├── dto
+│  │    │  │        │  ├── RegisterRequest.java
+│  │    │  │        │  └── RegisterResponse.java
+│  │    │  │        ├── entity
+│  │    │  │        │  ├── DbCheck.java
+│  │    │  │        │  └── User.java
+│  │    │  │        ├── repository
+│  │    │  │        │  ├── DbCheckRepository.java
+│  │    │  │        │  └── UserRepository.java
+│  │    │  │        └── service
+│  │    │  │          └── AuthService.java
+│  │    │  └── resources
+│  │    │    └── application.properties
+│  │    └── test
+│  │      └── java
+│  │        └── com
+│  │          └── ekart
+│  │            └── auth
+│  │              └── AuthServiceApplicationTests.java
 │  ├── product-service
 │  │  └── .gitkeep
 │  └── user-service
